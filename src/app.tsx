@@ -1,18 +1,23 @@
-import React, { useState } from "react";
-import { animated, config, useSpring } from "react-spring";
-import { HashRouter as Router, NavLink, Route, Switch } from "react-router-dom";
+import React, { useState } from 'react';
+import { animated, config, useSpring } from 'react-spring';
+import { HashRouter as Router, NavLink, Route, Switch } from 'react-router-dom';
 
 export function App() {
   return (
     <Router>
       <>
-        <h1>Cursor Follow Motion Study</h1>
+        <a
+          href="https://github.com/lourd/cursor-follow-motion"
+          className="source"
+        >
+          Cursor Follow Motion Study
+        </a>
         <div className="links">
           <NavLink exact to="/">
             Exact Follow
           </NavLink>
           <NavLink to="/second">Spring-based follow</NavLink>
-          <NavLink to="/third">Spring-based follow {"&"} scale</NavLink>
+          <NavLink to="/third">Spring-based follow {'&'} scale</NavLink>
         </div>
         <Switch>
           <Route exact path="/second">
