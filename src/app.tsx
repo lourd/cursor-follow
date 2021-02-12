@@ -6,10 +6,7 @@ export function App() {
   return (
     <Router>
       <>
-        <a
-          href="https://github.com/lourd/cursor-follow-motion"
-          className="source"
-        >
+        <a href="https://github.com/lourd/cursor-follow" className="source">
           Cursor Follow Motion Study
         </a>
         <div className="links">
